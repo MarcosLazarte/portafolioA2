@@ -258,6 +258,7 @@ ul {
     position: absolute;
     right: 4vw;
     bottom: 0px;
+    z-index: 2;
   }
   .navegadorAbajo .navegadorAbajo__switch {
     background: #252525;
@@ -304,7 +305,7 @@ ul {
     height: auto;
   }
   .cuerpito .cuerpito__trabajos--acomodar {
-    margin-top: 100px;
+    margin-top: -10px;
   }
   .cuerpito__titulazo {
     height: auto;
@@ -433,6 +434,36 @@ ul {
   .cuerpito__parrafoDos.color3 {
     color: #0E4150;
   }
+  .cuerpito__descripcion {
+    margin-top: 5vw;
+    background: -webkit-gradient(linear, left top, right top, color-stop(4.9vw, antiquewhite), color-stop(1%, transparent)) center, -webkit-gradient(linear, left top, left bottom, color-stop(4.9vw, antiquewhite), color-stop(1%, transparent)) center, #a799cc;
+    background: linear-gradient(90deg, antiquewhite 4.9vw, transparent 1%) center, linear-gradient(antiquewhite 4.9vw, transparent 1%) center, #a799cc;
+    background-size: 22px 22px;
+    height: 600px;
+    position: relative;
+    background-color: #374954;
+  }
+  .cuerpito__descripcion .set__triangulo {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 300px;
+  }
+  .cuerpito__descripcion .set__triangulo .triangulo {
+    border-left: calc(50vw - 6px) solid antiquewhite;
+    border-top: 50vw solid transparent;
+  }
+  .cuerpito__descripcion .set__triangulo .triaguloRevez {
+    border-right: calc(50vw - 6px) solid antiquewhite;
+    border-top: 50vw solid transparent;
+  }
   .cuerpito__trabajos {
     text-decoration: none;
   }
@@ -552,7 +583,7 @@ ul {
     margin-left: 4vw;
     height: auto;
     background-color: #374954;
-    z-index: 1;
+    z-index: 0;
   }
   .cuerpito__trabajos--imagen2 {
     position: relative;
@@ -561,7 +592,7 @@ ul {
     margin-left: 4vw;
     height: auto;
     background-color: #7A533C;
-    z-index: 1;
+    z-index: 0;
   }
   .cuerpito__trabajos--imagen3 {
     position: relative;
@@ -570,7 +601,7 @@ ul {
     margin-left: 4vw;
     height: auto;
     background-color: #FCB657;
-    z-index: 1;
+    z-index: 0;
   }
   .cuerpito__trabajos--imagen4 {
     position: relative;
@@ -579,7 +610,7 @@ ul {
     margin-left: 4vw;
     height: auto;
     background-color: #589764;
-    z-index: 2;
+    z-index: 0;
   }
   .cuerpito__trabajos--imagen5Caja {
     height: 100vw;
@@ -589,13 +620,13 @@ ul {
     overflow: hidden;
     margin-left: 4vw;
     position: relative;
-    z-index: 2;
+    z-index: 0;
   }
   .cuerpito__trabajos--imagen5 {
     margin-top: -150px;
     margin-bottom: -10px;
     width: 100%;
-    z-index: 1;
+    z-index: 0;
   }
   .charlemos {
     font-family: 'Italiana', serif;

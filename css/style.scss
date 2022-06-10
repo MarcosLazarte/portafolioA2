@@ -13,6 +13,12 @@ $fondoRosa1:#F7CBC9;
 $fondoRojo1: #75000D;
 $calculation: calc(20vh + 1px);
 
+$bg-color: hsl(256,33,10);
+$dot-color: hsl(256,33,70);
+
+$dot-size: 1px;
+$dot-space: 22px;
+
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
   }
@@ -235,6 +241,7 @@ ul{
             position: absolute;
             right: 4vw;
             bottom: 0px;
+            z-index: 2;
         }
         .navegadorAbajo__switch{
 
@@ -283,7 +290,7 @@ ul{
         height: auto;
 
         .cuerpito__trabajos--acomodar{
-            margin-top: 100px;
+            margin-top: -10px;
         }
     }
 
@@ -415,6 +422,36 @@ ul{
         &.color3{
             color: $fondoAzul1;
         }
+    }
+    .cuerpito__descripcion{
+        margin-top: 5vw;
+        background:
+            linear-gradient(90deg, antiquewhite (5.9vw - 1vw), transparent 1%) center,
+            linear-gradient(antiquewhite (5.9vw - 1vw), transparent 1%) center,
+            $dot-color;
+	    background-size: $dot-space $dot-space;
+        height: 600px;
+        position: relative;
+        background-color: #374954;
+
+        .set__triangulo{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            flex-direction: row;
+            height: 300px;
+
+            .triangulo{
+                border-left: calc(50vw - 6px) solid antiquewhite;
+                border-top: 50vw solid transparent;
+            }
+            .triaguloRevez{
+                border-right: calc(50vw - 6px) solid antiquewhite;
+                border-top: 50vw solid transparent;
+            }
+        }
+
     }
     .cuerpito__trabajos{
         text-decoration: none;
@@ -551,7 +588,7 @@ ul{
         height: auto;
         background-color: #374954;
 
-        z-index: 1;
+        z-index: 0;
     }
     .cuerpito__trabajos--imagen2{
         position: relative;
@@ -561,7 +598,7 @@ ul{
         height: auto;
         background-color: #7A533C;
 
-        z-index: 1;
+        z-index: 0;
     }
     .cuerpito__trabajos--imagen3{
         position: relative;
@@ -571,7 +608,7 @@ ul{
         height: auto;
         background-color: #FCB657;
 
-        z-index: 1;
+        z-index: 0;
     }
     .cuerpito__trabajos--imagen4{
         position: relative;
@@ -581,7 +618,7 @@ ul{
         height: auto;
         background-color: #589764;
 
-        z-index: 2;
+        z-index: 0;
     }
     .cuerpito__trabajos--imagen5Caja{
         height: 100vw;
@@ -592,7 +629,7 @@ ul{
         margin-left: 4vw;
         position: relative;
 
-        z-index: 2;
+        z-index: 0;
 
     }
     .cuerpito__trabajos--imagen5{
@@ -600,7 +637,7 @@ ul{
         margin-bottom: -10px;
         width: 100%;
 
-        z-index: 1;
+        z-index: 0;
     }
     .charlemos{
         font-family: 'Italiana', serif;
