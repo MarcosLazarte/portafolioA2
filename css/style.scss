@@ -426,13 +426,13 @@ ul{
     .cuerpito__descripcion{
         margin-top: 5vw;
         background:
-            linear-gradient(90deg, antiquewhite (5.9vw - 1vw), transparent 1%) center,
-            linear-gradient(antiquewhite (5.9vw - 1vw), transparent 1%) center,
+            linear-gradient(90deg, antiquewhite (5.5vw - 1vw), transparent 1%) center,
+            linear-gradient(antiquewhite (5.5vw - 1vw), transparent 1%) center,
             $dot-color;
 	    background-size: $dot-space $dot-space;
         height: 600px;
         position: relative;
-        background-color: #374954;
+        background-color: #89a9bd;
 
         .set__triangulo{
             width: 100%;
