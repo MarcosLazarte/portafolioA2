@@ -17,13 +17,15 @@ const mContactactame__lItemA = document.querySelector("#contactame__lItemA");
 const fAnio = document.querySelector("#footer__anio");
 const fLegal = document.querySelector("#footer__legal");
 
+const lightSwitch = document.querySelectorAll(".lightSwitch")
+
 var i="A";
 const hStar = document.querySelector("#star");
 const mAky = document.querySelector("#imagenAky");
 let animado = document.querySelectorAll(".animado");
 var alto = (window.innerHeight);
 
-btnSwitch.addEventListener('click', () =>{
+btnSwitch.addEventListener('click', () => {
     document.body.classList.toggle('dark');
     btnSwitch.classList.toggle('active');
     mTitulo.classList.toggle('dark');
@@ -46,6 +48,9 @@ btnSwitch.addEventListener('click', () =>{
     fAnio.classList.toggle('dark');
     fLegal.classList.toggle('dark');
 
+    lightSwitch.forEach(element => {
+        element.classList.toggle('dark')
+    });
 
 });
 //añadido nueva
@@ -70,6 +75,10 @@ hStar.addEventListener('click', () =>{
         mContactactame__lItemA.classList.toggle('color1');
         fAnio.classList.toggle('color1');
         fLegal.classList.toggle('color1');
+
+        lightSwitch.forEach(element => {
+            element.classList.toggle('color1')
+        });
 
         console.log("I tiene "+i+" y es rosa");
         i="B";
@@ -96,6 +105,10 @@ hStar.addEventListener('click', () =>{
         fAnio.classList.toggle('color1');
         fLegal.classList.toggle('color1');
 
+        lightSwitch.forEach(element => {
+            element.classList.toggle('color1')
+        });
+
         hCabezal__name.classList.toggle('color2');
         hCabezal__status.classList.toggle('color2');
         hNavNombre.classList.toggle('color2');
@@ -114,6 +127,10 @@ hStar.addEventListener('click', () =>{
         mContactactame__lItemA.classList.toggle('color2');
         fAnio.classList.toggle('color2');
         fLegal.classList.toggle('color2');
+
+        lightSwitch.forEach(element => {
+            element.classList.toggle('color2')
+        });
 
         console.log("I tiene "+i+" y es naranja");
         i="C";
@@ -140,6 +157,11 @@ hStar.addEventListener('click', () =>{
         fAnio.classList.toggle('color2');
         fLegal.classList.toggle('color2');
 
+        
+        lightSwitch.forEach(element => {
+            element.classList.toggle('color2')
+        });
+
         hCabezal__name.classList.toggle('color3');
         hCabezal__status.classList.toggle('color3');
         hNavNombre.classList.toggle('color3');
@@ -158,6 +180,10 @@ hStar.addEventListener('click', () =>{
         mContactactame__lItemA.classList.toggle('color3');
         fAnio.classList.toggle('color3');
         fLegal.classList.toggle('color3');
+
+        lightSwitch.forEach(element => {
+            element.classList.toggle('color3')
+        });
 
         console.log("I tiene "+i+" y es azul");
         i="D";
@@ -183,6 +209,10 @@ hStar.addEventListener('click', () =>{
         mContactactame__lItemA.classList.toggle('color3');
         fAnio.classList.toggle('color3');
         fLegal.classList.toggle('color3');
+
+        lightSwitch.forEach(element => {
+            element.classList.toggle('color3')
+        });
 
         i="A";
     }
